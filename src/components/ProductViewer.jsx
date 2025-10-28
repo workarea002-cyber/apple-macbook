@@ -1,12 +1,10 @@
-import React from "react";
-import useMacbookStore from "../store";
 import clsx from "clsx";
 import { Canvas } from "@react-three/fiber";
-import MacbookModel14 from "./models/Macbook-14";
-import { OrbitControls } from "@react-three/drei";
+import { useMediaQuery } from "react-responsive";
+
+import useMacbookStore from "../store";
 import StudioLights from "./three/StudioLights";
 import ModelSwitcher from "./three/ModelSwitcher";
-import { useMediaQuery } from "react-responsive";
 
 const ProductViewer = () => {
   const { color, setColor, scale, setScale } = useMacbookStore();
